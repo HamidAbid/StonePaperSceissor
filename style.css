@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(201, 253, 253);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: rgb(0, 0, 0);
+    color: #1df800;
+}
+.nav-letter{
+    text-shadow: 3px 3px 8px  #c3ffbb;
+    background-color: #00000000;
+}
+
+#start{
+    padding: 10px 20px;
+    margin: 5px;
+    width: max-content;
+    font-size: 2rem;
+    color: #1df800;
+    border: none;
+    border-radius: 35px;
+    background: #000;
+}
+#start:hover{
+    cursor: pointer;
+    color: #000;
+    background: #1df800;
+}
+.img{  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 60px;
+    margin: 0px;
+    justify-content: space-evenly;
+
+}
+
+img{
+    border-radius: 100px;
+    width: 150px;
+}
+img:hover{
+   
+    cursor: pointer;
+}
+
+.score{
+    display: flex;
+    gap: 130px;
+    padding-top: 40px;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.let{
+    gap: 90px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+.move{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.text-box{
+ 
+    background-color: rgb(0, 0, 0);
+    color: #1df800;
+display: inline;
+padding: 1rem 4rem;
+font-size: 1.9rem;
+border: 2px solid white;
+border-radius: 35px;
+
+
+}
+.green{
+    background: rgb(0, 231, 0);
+    color: #000;
+    
+}
+.blue{
+    background: rgb(0, 87, 248);
+    color: #000;
+}
+.red{
+    background: rgb(255, 1, 1);
+    color: #000;
+}
+.win{
+   box-shadow: 0.5px 1px 8px 4px rgb(0, 231, 0);
+
+}
+.loss{
+    box-shadow: 0.5px 1px 8px 4px rgb(255, 1, 1);
+}
+.draw{
+    box-shadow: 0.5px 1px 8px 4px rgb(0, 87, 248);
+}
+
+
+
+@media (min-device-width: 500px) and (max-width: 700px ) {
+    .nav-letter{
+        font-size: 40px;
+    }
+    img{
+       width: 120px;
+    }
+    .let .score{
+        font-size: 1.5rem;
+    }
+  }
+@media (min-device-width: 0px) and (max-width: 500px ) {
+    .nav-letter{
+        font-size: 28px;
+    }
+    img{
+       width: 80px;
+    }
+.let .score{
+    font-size: 1.2rem;
+}
+  }
